@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 source = "vcs"
 
 [project]
-name = "iperf3"
+name = "iperf"
 description = "Python wrapper around iperf3"
 license = "MIT"
 dependencies = []
