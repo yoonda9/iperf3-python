@@ -23,12 +23,8 @@ import os
 import select
 import json
 import threading
+from queue import Queue
 from socket import SOCK_DGRAM, SOCK_STREAM
-
-try:
-    from queue import Queue
-except ImportError:
-    from Queue import Queue  # Python2 compatibility
 
 
 MAX_UDP_BULKSIZE = 65535 - 8 - 20

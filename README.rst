@@ -137,8 +137,9 @@ Testing
 - Test coverage reporting through `coveralls.io <https://coveralls.io/>`__
 - Tested against the following Python versions:
 
-  - 2.7
   - 3.6
+  - 3.8
+  - 3.11
 
 .. |PyPi Status| image:: https://img.shields.io/pypi/v/iperf3.svg
    :target: https://pypi.python.org/pypi/iperf3
