@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "iperf3"
+description = "Python wrapper around iperf3"
+license = "MIT"
+dependencies = []
+dynamic = ["version"]
+authors = [
+    { name = "Mathijs Mortimer", email = "mathijs@mortimer.nl" },
+    { name = "David Yoon" },
+]
+maintainers = [{ name = "David Yoon" }]
+classifiers = [
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python :: 2.6',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Development Status :: 4 - Beta',
+    'Natural Language :: English',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'Intended Audience :: Telecommunications Industry',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Unix',
+    'Operating System :: MacOS',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: System :: Networking',
+]
+
+[project.urls]
+Repository = "https://github.com/yoonda9/iperf3-python.git"
+
+[tool.hatch.build.targets.sdist]
+include = ["*.rst", "LICENSE"]
+exclude = ["*.pyc", "*.pyo"]
+
+[project.optional-dependencies]
+test = ["pytest>7"]

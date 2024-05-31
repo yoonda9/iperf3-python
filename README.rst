@@ -1,10 +1,10 @@
-iperf3-python: Python wrapper around iperf3
-===========================================
+py-iperf3: Python wrapper around iperf3
+=======================================
 
-|PyPi Status| |Build Status| |Coverage Status| |Documentation Status|
+.. note::
+    This project is forked from `https://github.com/thiezn/iperf3-python <iperf3-python>`__ which now seems to be unmaintained.
 
-Detailed documentation at
-`iperf3-python.readthedocs.org <https://iperf3-python.readthedocs.org/>`__
+|PyPi Status| |Build Status| |Coverage Status|
 
 iperf3 for python provides a wrapper around the excellent iperf3
 utility. iperf3 is a complete rewrite of the original iperf
@@ -65,7 +65,7 @@ You can also install directly from the github repository:
 
 .. code:: bash
 
-    git clone https://github.com/thiezn/iperf3-python.git
+    git clone https://github.com/yoonda/iperf3-python.git
     cd iperf3-python
     python3 setup.py install
 
@@ -142,9 +142,7 @@ Testing
 
 .. |PyPi Status| image:: https://img.shields.io/pypi/v/iperf3.svg
    :target: https://pypi.python.org/pypi/iperf3
-.. |Build Status| image:: https://travis-ci.org/thiezn/iperf3-python.svg?branch=master
-   :target: https://travis-ci.org/thiezn/iperf3-python
-.. |Coverage Status| image:: https://coveralls.io/repos/github/thiezn/iperf3-python/badge.svg?branch=master
-   :target: https://coveralls.io/github/thiezn/iperf3-python?branch=master
-.. |Documentation Status| image:: https://readthedocs.org/projects/iperf3-python/badge/?version=latest
-   :target: http://iperf3-python.readthedocs.io/en/latest/?badge=latest
+.. |Build Status| image:: https://travis-ci.org/yoonda/iperf3-python.svg?branch=master
+   :target: https://travis-ci.org/yoonda/iperf3-python
+.. |Coverage Status| image:: https://coveralls.io/repos/github/yoonda/iperf3-python/badge.svg?branch=master
+   :target: https://coveralls.io/github/yoonda/iperf3-python?branch=master
